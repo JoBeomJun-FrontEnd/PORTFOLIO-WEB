@@ -13,24 +13,258 @@
     ></script>
   </head>
   <body>
-    <header></header>
+    <header id="header">
+      <nav>
+        <!-- 이미지(로고) -->
+        <div>
+          <img src="./image/logo.png" alt="조범준 로고" />
+          <a href="#">조범준</a>
+        </div>
+
+        <!-- 메뉴 -->
+        <div>
+          <ul>
+            <li>
+              <a href="#home">Home</a>
+            </li>
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#skills">Skils</a>
+            </li>
+            <li>
+              <a href="#work">Work</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
     <main>
       <!-- Home -->
-      <section id="home"></section>
+      <section id="home">
+        <!-- Home Data -->
+        <div>
+          <h2>
+            안녕하세요! <br />
+            <strong>주니어 FrontEnd 개발자</strong> <br />
+            <strong>조범준</strong>입니다!
+          </h2>
+          <a href="#contact">Contact</a>
+
+          <div>
+            <i class="fa-solid fa-phone"> 010-4067-1637</i>
+            <br />
+            <a
+              href="https://github.com/JoBemoJun"
+              target="_blank"
+              title="조범준 깃허브 링크"
+            >
+              <i class="fa-brands fa-github"> Git</i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Home Image -->
+        <div>
+          <img src="./image/home/profile.jpg" alt="조범준 프로필 이미지" />
+        </div>
+      </section>
 
       <!-- About -->
-      <section id="about"></section>
+      <section id="about">
+        <h2>About</h2>
+
+        <div>
+          <div>
+            <img src="" alt="" />
+          </div>
+
+          <div>
+            <h3>저는 이렇게 답합니다.</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+              dolorum ab tempora sed recusandae voluptas veniam modi minima
+              pariatur veritatis dignissimos ut necessitatibus harum obcaecati
+              natus, numquam minus, iure corporis.
+            </p>
+          </div>
+        </div>
+      </section>
 
       <!-- Skills -->
-      <section id="skills"></section>
+      <section id="skills">
+        <h2>Skills</h2>
 
-      <!-- Work -->
-      <section id="work"></section>
+        <div>
+          <!-- 스킬 데이터 -->
+          <div>
+            <h3>Profesional Skills</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+              soluta nam commodi sint fuga rem quas ea eum temporibus pariatur
+              sed ut molestiae assumenda, consequuntur dolore quaerat impedit.
+              Vero, accusantium?
+            </p>
+            <div>
+              <article>
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-html5"></i>
+                  <!-- skill name -->
+                  <span>HTML5</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span>80%</span>
+                </div>
+                <!-- progress bar -->
+                <progress id="html5" max="100" value="80"></progress>
+              </article>
+              <article>
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <!-- skill name -->
+                  <span>CSS3</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span>80%</span>
+                </div>
+                <!-- progress bar -->
+                <progress id="css3" max="100" value="80"></progress>
+              </article>
+              <article>
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-js"></i>
+                  <!-- skill name -->
+                  <span>JavaScript</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span>70%</span>
+                </div>
+                <!-- progress bar -->
+                <progress id="javascript" max="100" value="70"></progress>
+              </article>
+              <article>
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-github"></i>
+                  <!-- skill name -->
+                  <span>GitHub</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span>60%</span>
+                </div>
+                <!-- progress bar -->
+                <progress id="github" max="100" value="60"></progress>
+              </article>
+              <article>
+                <div>
+                  <!-- icon -->
+                  <i class="fa-brands fa-figma"></i>
+                  <!-- skill name -->
+                  <span>Figma</span>
+                </div>
+                <div>
+                  <!-- percentage -->
+                  <span>40%</span>
+                </div>
+                <!-- progress bar -->
+                <progress id="figma" max="100" value="40"></progress>
+              </article>
+            </div>
+          </div>
+
+          <!-- 스킬 이미지 -->
+          <div>
+            <img src="" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects">
+        <h2>Projects</h2>
+
+        <!-- 쿠팡, 오늘의발견 -->
+        <div>
+          <a
+            href="https://jobemojun.github.io/Coupang_TodayDiscovery/"
+            target="_blank"
+            title="쿠팡, 오늘의 발견"
+          >
+            <img
+              src="./image/work/Coupang_TodayDiscovery.png"
+              alt="쿠팡, 오늘의 발견"
+            />
+          </a>
+        </div>
+
+        <!-- 쿠팡, 카테고리별 추천 광고 상품 -->
+        <div>
+          <a
+            href="https://jobemojun.github.io/Coupang-CategoryBest/"
+            target="_blank"
+            title="쿠팡, 카테고리별 추천 광고 상품"
+          >
+            <img
+              src="./image/work/Coupang_CategoryBest.png"
+              alt="쿠팡, 카테고리별 추천 광고 상품"
+            />
+          </a>
+        </div>
+      </section>
 
       <!-- Contact -->
-      <section id="contact"></section>
+      <section id="contact">
+        <h2>Contact</h2>
+
+        <div>
+          <form>
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="text" name="title" placeholder="Title" required />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button>보내기</button>
+          </form>
+        </div>
+      </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>조범준</p>
+      <div>
+        <div>
+          <a
+            href="https://github.com/JoBemoJun"
+            target="_blank"
+            title="조범준 깃허브 링크"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#header">
+            <i class="fa-solid fa-circle-up"></i>
+          </a>
+        </div>
+        <p>
+          Copyright &copy: 2024 Web Front-end developer portfolio-- by BeomJun
+          Jo
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
