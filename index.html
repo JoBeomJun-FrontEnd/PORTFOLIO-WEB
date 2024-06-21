@@ -46,33 +46,51 @@
     </header>
     <main>
       <!-- Home -->
-      <section id="home">
+      <section class="home container" id="home">
         <!-- Home Data -->
-        <div>
-          <h2>
+        <div class="home__data">
+          <h2 class="home__title">
             안녕하세요! <br />
-            <strong>주니어 FrontEnd 개발자</strong> <br />
-            <strong>조범준</strong>입니다!
-          </h2>
-          <a href="#contact">Contact</a>
-
-          <div>
-            <i class="fa-solid fa-phone"> 010-4067-1637</i>
+            <strong class="home__title-color">주니어 FrontEnd 개발자</strong>
             <br />
+            <strong class="home__title-color">조범준</strong>입니다!
+          </h2>
+
+          <div class="home__social">
+            <i class="fa-solid fa-user home__social-icon">
+              <span class="home__social-text">조범준</span>
+            </i>
+            <i class="fa-solid fa-cake-candles home__social-icon">
+              <span class="home__social-text">1998. 12. 15</span>
+            </i>
+            <i class="fa-solid fa-house home__social-icon">
+              <span class="home__social-text">서울 성북구</span>
+            </i>
+            <i class="fa-solid fa-phone home__social-icon">
+              <span class="home__social-text">010-4067-1637</span>
+            </i>
+            <i class="fa-solid fa-envelope home__social-icon">
+              <span class="home__social-text">oreasv3@gmail.com</span>
+            </i>
             <a
               href="https://github.com/jobeomjun-frontend"
               target="_blank"
               title="조범준 깃허브 링크"
+              class="home__social-link"
             >
-              <i class="fa-brands fa-github"> Git</i>
+              <i class="fa-brands fa-github home__social-icon">
+                <span class="home__social-text">Git</span>
+              </i>
             </a>
           </div>
         </div>
 
         <!-- Home Image -->
-        <div>
-          <img src="./image/home/profile.jpg" alt="조범준 프로필 이미지" />
-        </div>
+        <img
+          class="home__img"
+          src="./image/home/profile.jpg"
+          alt="조범준 프로필 이미지"
+        />
       </section>
 
       <!-- About -->
