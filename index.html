@@ -16,13 +16,13 @@
   <body>
     <header class="header">
       <nav class="nav container">
-        <!-- 이미지(로고) -->
+        <!-- Image Logo -->
         <div class="nav__logo">
           <img class="nav__img" src="./image/logo.png" alt="조범준 로고" />
           <a href="#" class="nav__brand">주니어 FrontEnd 개발자 조범준</a>
         </div>
 
-        <!-- 메뉴 -->
+        <!-- Menu -->
         <div class="nav__menu" id="nav_menu">
           <ul class="nav__list">
             <li class="nav__item">
@@ -47,171 +47,170 @@
     <main>
       <!-- Home -->
       <section class="home container" id="home">
-        <!-- Home Data -->
-        <div class="home__data">
-          <h2 class="home__title">
-            안녕하세요! <br />
-            <strong class="home__title-color">주니어 FrontEnd 개발자</strong>
-            <br />
-            <strong class="home__title-color">조범준</strong>입니다!
-          </h2>
+        <!-- Home Title -->
+        <h2 class="home__title">
+          안녕하세요! <br />
+          <strong class="home__title-color">주니어 FrontEnd 개발자</strong>
+          <br />
+          <strong class="home__title-color">조범준</strong>입니다!
+        </h2>
 
-          <div class="home__social">
-            <i class="fa-solid fa-user home__social-icon">
-              <span class="home__social-text">조범준</span>
-            </i>
-            <i class="fa-solid fa-cake-candles home__social-icon">
-              <span class="home__social-text">1998. 12. 15</span>
-            </i>
-            <i class="fa-solid fa-house home__social-icon">
-              <span class="home__social-text">서울 성북구</span>
-            </i>
-            <i class="fa-solid fa-phone home__social-icon">
-              <span class="home__social-text">010-4067-1637</span>
-            </i>
-            <i class="fa-solid fa-envelope home__social-icon">
-              <span class="home__social-text">oreasv3@gmail.com</span>
-            </i>
-            <a
-              href="https://github.com/jobeomjun-frontend"
-              target="_blank"
-              title="조범준 깃허브 링크"
-              class="home__social-link"
-            >
-              <i class="fa-brands fa-github home__social-icon">
-                <span class="home__social-text">Git</span>
-              </i>
-            </a>
+        <!-- Home Content -->
+        <div class="home__content">
+          <!-- Home Image -->
+          <img
+            class="home__img"
+            src="./image/home/profile.jpg"
+            alt="조범준 프로필 이미지"
+          />
+
+          <!-- Home Data -->
+          <div class="home__data">
+            <ul class="home__profile">
+              <li>
+                <i class="fa-solid fa-user home__icon"> </i>
+                <span class="home__text">조범준</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-cake-candles home__icon"> </i>
+                <span class="home__text">1998. 12. 15</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-house home__icon"> </i>
+                <span class="home__text">서울 성북구</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-phone home__icon"> </i>
+                <span class="home__text">010-4067-1637</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope home__icon"></i>
+                <span class="home__text">oreasv3@gmail.com</span>
+              </li>
+            </ul>
+            <ul class="home__social">
+              <li>
+                <a
+                  href="https://github.com/jobeomjun-frontend"
+                  target="_blank"
+                  title="조범준 깃허브 링크"
+                  class="home__social--link"
+                >
+                  <i class="fa-brands fa-github home__icon"> </i>
+                  <span class="home__text">Git</span>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
-
-        <!-- Home Image -->
-        <img
-          class="home__img"
-          src="./image/home/profile.jpg"
-          alt="조범준 프로필 이미지"
-        />
       </section>
 
       <!-- About -->
-      <section id="about">
-        <h2>About</h2>
+      <section class="section bg-gery-1" id="about">
+        <h2 class="section__title">About</h2>
 
-        <div>
-          <div>
-            <img src="" alt="" />
-          </div>
-
-          <div>
-            <h3>저는 이렇게 답합니다.</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
-              dolorum ab tempora sed recusandae voluptas veniam modi minima
-              pariatur veritatis dignissimos ut necessitatibus harum obcaecati
-              natus, numquam minus, iure corporis.
-            </p>
-          </div>
+        <div class="about_conainer container">
+          <h3 class="about__subtitle">저는 이렇게 답합니다.</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus
+            dolorum ab tempora sed recusandae voluptas veniam modi minima
+            pariatur veritatis dignissimos ut necessitatibus harum obcaecati
+            natus, numquam minus, iure corporis.
+          </p>
         </div>
       </section>
 
       <!-- Skills -->
-      <section id="skills">
-        <h2>Skills</h2>
+      <section class="section" id="skills">
+        <h2 class="section__title">Skills</h2>
 
         <div>
-          <!-- 스킬 데이터 -->
+          <!-- Skill Data -->
+          <h3>Profesional Skills</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
+            soluta nam commodi sint fuga rem quas ea eum temporibus pariatur sed
+            ut molestiae assumenda, consequuntur dolore quaerat impedit. Vero,
+            accusantium?
+          </p>
           <div>
-            <h3>Profesional Skills</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi
-              soluta nam commodi sint fuga rem quas ea eum temporibus pariatur
-              sed ut molestiae assumenda, consequuntur dolore quaerat impedit.
-              Vero, accusantium?
-            </p>
-            <div>
-              <article>
-                <div>
-                  <!-- icon -->
-                  <i class="fa-brands fa-html5"></i>
-                  <!-- skill name -->
-                  <span>HTML5</span>
-                </div>
-                <div>
-                  <!-- percentage -->
-                  <span>80%</span>
-                </div>
-                <!-- progress bar -->
-                <progress id="html5" max="100" value="80"></progress>
-              </article>
-              <article>
-                <div>
-                  <!-- icon -->
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <!-- skill name -->
-                  <span>CSS3</span>
-                </div>
-                <div>
-                  <!-- percentage -->
-                  <span>80%</span>
-                </div>
-                <!-- progress bar -->
-                <progress id="css3" max="100" value="80"></progress>
-              </article>
-              <article>
-                <div>
-                  <!-- icon -->
-                  <i class="fa-brands fa-js"></i>
-                  <!-- skill name -->
-                  <span>JavaScript</span>
-                </div>
-                <div>
-                  <!-- percentage -->
-                  <span>70%</span>
-                </div>
-                <!-- progress bar -->
-                <progress id="javascript" max="100" value="70"></progress>
-              </article>
-              <article>
-                <div>
-                  <!-- icon -->
-                  <i class="fa-brands fa-github"></i>
-                  <!-- skill name -->
-                  <span>GitHub</span>
-                </div>
-                <div>
-                  <!-- percentage -->
-                  <span>60%</span>
-                </div>
-                <!-- progress bar -->
-                <progress id="github" max="100" value="60"></progress>
-              </article>
-              <article>
-                <div>
-                  <!-- icon -->
-                  <i class="fa-brands fa-figma"></i>
-                  <!-- skill name -->
-                  <span>Figma</span>
-                </div>
-                <div>
-                  <!-- percentage -->
-                  <span>40%</span>
-                </div>
-                <!-- progress bar -->
-                <progress id="figma" max="100" value="40"></progress>
-              </article>
-            </div>
-          </div>
-
-          <!-- 스킬 이미지 -->
-          <div>
-            <img src="" alt="" />
+            <article>
+              <div>
+                <!-- icon -->
+                <i class="fa-brands fa-html5"></i>
+                <!-- skill name -->
+                <span>HTML5</span>
+              </div>
+              <div>
+                <!-- percentage -->
+                <span>80%</span>
+              </div>
+              <!-- progress bar -->
+              <progress id="html5" max="100" value="80"></progress>
+            </article>
+            <article>
+              <div>
+                <!-- icon -->
+                <i class="fa-brands fa-css3-alt"></i>
+                <!-- skill name -->
+                <span>CSS3</span>
+              </div>
+              <div>
+                <!-- percentage -->
+                <span>80%</span>
+              </div>
+              <!-- progress bar -->
+              <progress id="css3" max="100" value="80"></progress>
+            </article>
+            <article>
+              <div>
+                <!-- icon -->
+                <i class="fa-brands fa-js"></i>
+                <!-- skill name -->
+                <span>JavaScript</span>
+              </div>
+              <div>
+                <!-- percentage -->
+                <span>70%</span>
+              </div>
+              <!-- progress bar -->
+              <progress id="javascript" max="100" value="70"></progress>
+            </article>
+            <article>
+              <div>
+                <!-- icon -->
+                <i class="fa-brands fa-github"></i>
+                <!-- skill name -->
+                <span>GitHub</span>
+              </div>
+              <div>
+                <!-- percentage -->
+                <span>60%</span>
+              </div>
+              <!-- progress bar -->
+              <progress id="github" max="100" value="60"></progress>
+            </article>
+            <article>
+              <div>
+                <!-- icon -->
+                <i class="fa-brands fa-figma"></i>
+                <!-- skill name -->
+                <span>Figma</span>
+              </div>
+              <div>
+                <!-- percentage -->
+                <span>40%</span>
+              </div>
+              <!-- progress bar -->
+              <progress id="figma" max="100" value="40"></progress>
+            </article>
           </div>
         </div>
       </section>
 
       <!-- Projects -->
-      <section id="projects">
-        <h2>Projects</h2>
+      <section class="section bg-gery-1" id="projects">
+        <h2 class="section__title">Projects</h2>
 
         <!-- 쿠팡, 오늘의발견 -->
         <div>
@@ -243,8 +242,8 @@
       </section>
 
       <!-- Contact -->
-      <section id="contact">
-        <h2>Contact</h2>
+      <section class="section" id="contact">
+        <h2 class="section__title">Contact</h2>
 
         <div>
           <form>
