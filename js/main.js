@@ -1,13 +1,29 @@
 'use strict';
 
-let greeting = 'Hello, world!';
+document.addEventListener('DOMContentLoaded', function () {
+  const progessBars = document.querySelectorAll('.skills__progessbar');
 
-console.log(greetting);
+  function handleIntersection(entries, observe) {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        console.log('d');
+        const progessBar = entry.target;
+        const percentage = progessBar.querySelector('.skills__percentage');
+        const text = percentage.querySelector(
+          '.skills__percentage-text',
+        ).textContent;
+        const value = parseInt(text, 10);
+        percentage.style.width = value - 1 + '%';
+        observer.unobserve(progessBar);
+      }
+    });
+  }
 
-let nickname = '짐코딩';
-let hobby = ['헬스', '수영'];
+  const observer = new IntersectionObserver(handleIntersection, {
+    threshold: 0.1,
+  });
 
-let person = {
-  nickname: nickname,
-  hobby: hobby,
-};
+  progessBars.forEach((bar) => {
+    observer.observe(bar);
+  });
+});

@@ -9,6 +9,75 @@
   --blue-color: #0336ff;
   --red-color: #b71c1c;
 
+  --gray-color-100: #f3f3f3;
+  --gray-color-200: #e7e7e7;
+  --gray-color-300: #dcdcdc;
+  --gray-color-400: #d0d0d0;
+  --gray-color-500: #c4c4c4;
+  --gray-color-600: #aaa9a9;
+  --gray-color-700: #767676;
+  --gray-color-800: #4e4e4e;
+  --gray-color-900: #272727;
+
+  --blue-color-100: #cceafa;
+  --blue-color-200: #65cde3;
+  --blue-color-300: #61bfe6;
+  --blue-color-400: #33abe9;
+  --blue-color-500: #0096e4;
+  --blue-color-600: #0074e9;
+  --blue-color-700: #005a89;
+  --blue-color-800: #003c5b;
+  --blue-color-900: #001e2e;
+
+  --red-color-100: #fad3d6;
+  --red-color-200: #f5a7ac;
+  --red-color-300: #ef7b83;
+  --red-color-400: #ea4f59;
+  --red-color-500: #e52330;
+  --red-color-600: #b71c26;
+  --red-color-700: #89151d;
+  --red-color-800: #5c0e13;
+  --red-color-900: #2e070a;
+
+  --ornage-color-100: #faded3;
+  --ornage-color-300: #f5c4a7;
+  --ornage-color-400: #efa07b;
+  --ornage-color-500: #ea8d4f;
+  --ornage-color-600: #e56a23;
+  --ornage-color-700: #894315;
+  --ornage-color-800: #5c2d0e;
+  --ornage-color-900: #2e1507;
+
+  --green-color-100: #f4f5d2;
+  --green-color-200: #e9eba5;
+  --green-color-300: #dde177;
+  --green-color-400: #d2d74a;
+  --green-color-500: #c7cd1d;
+  --green-color-600: #9fa417;
+  --green-color-700: #777b11;
+  --green-color-800: #50520c;
+  --green-color-900: #282906;
+
+  --brown-color-100: #dfd5d4;
+  --brown-color-200: #bfaba9;
+  --brown-color-300: #9d7a6d;
+  --brown-color-400: #7e5852;
+  --brown-color-500: #5e2e27;
+  --brown-color-600: #4b251f;
+  --brown-color-700: #381c17;
+  --brown-color-800: #261210;
+  --brown-color-900: #130908;
+
+  --purple-color-100: #dfd8f2;
+  --purple-color-200: #beb0e6;
+  --purple-color-300: #9e89d9;
+  --purple-color-400: #7d61cd;
+  --purple-color-500: #5d3ac0;
+  --purple-color-600: #4a2e9a;
+  --purple-color-700: #382373;
+  --purple-color-800: #25174d;
+  --purple-color-900: #130c26;
+
   /* Brand Colors */
   --primary-color: var(--blue-color);
   --secondary-color: #26a69a;
@@ -238,4 +307,109 @@ body {
   font-weight: var(--font--weight-bold);
   margin-bottom: var(--spacing-2);
   text-align: center;
+}
+
+.about__text {
+  font-size: var(--font-size-4);
+  text-align: center;
+  color: var(--gray-color);
+}
+
+/* Skills */
+.skills__container {
+  column-gap: var(--spacing-4);
+  align-items: center;
+}
+
+.skills__subtitle {
+  font-size: var(--font-size-4);
+  font-weight: var(--font--weight-black);
+  margin-bottom: var(--spacing-3);
+  text-align: center;
+}
+
+.skills__progess-collection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 1100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.skills__data {
+  border-radius: 0.3rem;
+  margin-top: var(--spacing-1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.8rem;
+  font-weight: var(--font--weight-bold);
+  overflow: hidden;
+  cursor: default;
+}
+
+.skills__icon {
+  color: var(--info-color);
+  font-size: var(--font-size-1);
+}
+
+.skills__names {
+  display: flex;
+  align-items: center;
+}
+
+.skills__name {
+  font-size: var(--font-size-4);
+  color: var(--gray-color-600);
+  margin-left: 50px;
+}
+
+.skills__progessbar {
+  width: 800px;
+  height: 32px;
+  background-color: var(--gray-color-100);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow-2);
+}
+
+.skills__percentage {
+  background-color: var(--green-color-300);
+  height: 28px;
+  margin-top: 2px;
+  margin-bottom: 2px;
+  margin-left: 1%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 10px;
+  border-radius: 5px;
+  width: 0;
+  transition: width 4s ease;
+}
+
+.skills__percentage-text {
+  font-size: var(--font-size-5);
+  color: var(--gray-color-700);
+}
+
+.skills__progess {
+  position: relative;
+  width: 800px;
+  height: 32px;
+  appearance: none;
+}
+
+.skills__progess::-webkit-progress-bar {
+  background: var(--gray-color-100);
+  border-radius: 5px;
+  width: 100%;
+  overflow: hidden;
+  box-shadow: var(--box-shadow-2);
+}
+
+.skills__progess::-webkit-progress-value {
+  background: var(--primary-color);
+  border-radius: 5px;
 }
