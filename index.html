@@ -26,7 +26,7 @@
         <div class="nav__menu" id="nav_menu">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#home" class="nav__link active-link">Home</a>
+              <a href="#" class="nav__link active-link">Home</a>
             </li>
             <li class="nav__item">
               <a href="#about" class="nav__link">About</a>
@@ -210,32 +210,89 @@
       <section class="section bg-gery-1" id="projects">
         <h2 class="section__title">Projects</h2>
 
-        <!-- 쿠팡, 오늘의발견 -->
-        <div>
+        <div class="projects__container container">
+          <!-- 쿠팡, 오늘의발견 -->
           <a
+            class="projects__link"
             href="https://jobeomjun-frontend.github.io/Coupang_TodayDiscovery/"
             target="_blank"
             title="쿠팡, 오늘의 발견"
           >
             <img
-              src="./image/work/Coupang_TodayDiscovery.png"
+              class="projects__img"
+              src="./image/Projects/Coupang_TodayDiscovery.png"
               alt="쿠팡, 오늘의 발견"
             />
           </a>
-        </div>
 
-        <!-- 쿠팡, 카테고리별 추천 광고 상품 -->
-        <div>
+          <!-- 쿠팡, 카테고리별 추천 광고 상품 -->
           <a
+            class="projects__link"
             href="https://jobeomjun-frontend.github.io/Coupang-CategoryBest/"
             target="_blank"
             title="쿠팡, 카테고리별 추천 광고 상품"
           >
             <img
-              src="./image/work/Coupang_CategoryBest.png"
+              class="projects__img"
+              src="./image/Projects/Coupang_CategoryBest.png"
               alt="쿠팡, 카테고리별 추천 광고 상품"
             />
           </a>
+
+          <!-- 주니어 ForntEnd 개발자 조범준 -->
+          <div class="info">
+            <a
+              class="projects__link"
+              href="https://jobeomjun-frontend.github.io/PORTFOLIO-WEB/"
+              target="_blank"
+              title="주니어 ForntEnd 개발자 조범준"
+            >
+              <img
+                class="projects__img"
+                src="./image/Projects/FrontEnd_Developer_JoBeomJun.png"
+                alt="주니어 ForntEnd 개발자 조범준"
+              />
+            </a>
+          </div>
+
+          <!-- 클릭시 나오는 작업 -->
+          <!-- <div class="projects__back">
+            <h3 class="back__title">Portfolio</h3>
+            <div class="back__inner detail">
+              <p class="back__text">개인 포트폴리오 웹페이지 입니다.</p>
+            </div>
+            <div class="back__inner time">
+              <h4 class="back__subTitle">#Period</h4>
+              <p class="back__text">2024.06.19 ~ 2024.06.25</p>
+            </div>
+            <div class="back__inner tech">
+              <h4 class="back__subTitle">#Tech</h4>
+              <span class="back__text">HTML5</span>
+              <span class="back__text">CSS3</span>
+            </div>
+            <div class="back__inner work">
+              <h4 class="back__subTitle">#My Work</h4>
+              <ul>
+                <li class="back__text">HTML 마크업</li>
+                <li class="back__text">CSS 스타일링</li>
+                <li class="back__text">JavaScript 뷰포트 애니메이션</li>
+              </ul>
+            </div>
+            <div class="back__inner btns">
+              <a
+                class="back__btn button"
+                href="https://jobeomjun-frontend.github.io/PORTFOLIO-WEB/"
+              >
+                Source Code
+              </a>
+              <a
+                class="back__btn button"
+                href="https://jobeomjun-frontend.github.io/PORTFOLIO-WEB/"
+              >
+                Demo
+              </a>
+            </div>
+          </div> -->
         </div>
       </section>
 
@@ -243,11 +300,24 @@
       <section class="section" id="contact">
         <h2 class="section__title">Contact</h2>
 
-        <div>
-          <form>
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="text" name="title" placeholder="Title" required />
+        <div class="contact__container container">
+          <form id="contactForm" class="contact__form">
+            <input
+              class="contact__input"
+              type="text"
+              name="name"
+              placeholder="Name"
+              required
+            />
+            <input
+              class="contact__input"
+              type="text"
+              name="title"
+              placeholder="Title"
+              required
+            />
             <textarea
+              class="contact__input"
               name="message"
               id="message"
               cols="30"
@@ -255,32 +325,20 @@
               placeholder="Message"
               required
             ></textarea>
-            <button>보내기</button>
+            <button class="contact__btn button">Send</button>
           </form>
         </div>
       </section>
     </main>
 
-    <footer>
-      <p>조범준</p>
-      <div>
-        <div>
-          <a
-            href="https://github.com/jobeomjun-frontend"
-            target="_blank"
-            title="조범준 깃허브 링크"
-          >
-            <i class="fa-brands fa-github"></i>
-          </a>
-          <a href="#header">
-            <i class="fa-solid fa-circle-up"></i>
-          </a>
-        </div>
-        <p>
-          Copyright &copy: 2024 Web Front-end developer portfolio-- by BeomJun
-          Jo
-        </p>
-      </div>
+    <footer class="footer">
+      <p class="footer__title">주니어 FrontEnd 개발자 조범준</p>
+      <p class="footer__copy">
+        Copyright &copy: 2024 Web Front-end developer portfolio-- by BeomJun Jo
+      </p>
+      <a href="#">
+        <i class="fa-solid fa-circle-up footer__icon"></i>
+      </a>
     </footer>
   </body>
 </html>

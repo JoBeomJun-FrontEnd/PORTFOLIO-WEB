@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', function () {
   function handleIntersection(entries, observe) {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
-        console.log('d');
         const progessBar = entry.target;
         const percentage = progessBar.querySelector('.skills__percentage');
         const text = percentage.querySelector(
