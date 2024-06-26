@@ -446,37 +446,6 @@ body {
   transform: scale(1.05);
 }
 
-/* 클릭시 나오는 작업 */
-/* 
-.back__title {
-  font-weight: var(--font--weight-bold);
-  margin-bottom: 8px;
-}
-
-.back__inner {
-  margin-bottom: 12px;
-  font-size: var(--font-size-6);
-}
-
-.back__subTitle {
-  margin-bottom: 8px;
-  font-weight: var(--font--weight-medium);
-}
-
-.projects__back {
-  font-weight: var(--font--weight-light);
-}
-
-.back__btn {
-  color: var(--white-color);
-  font-weight: var(--font--weight-medium);
-  text-align: center;
-  background-color: var(--gray-color-600);
-  font-size: var(--font-size-6);
-  border-radius: 8px;
-  margin-right: 8px;
-} */
-
 /* Contact */
 .contact__container {
   display: flex;
@@ -525,6 +494,7 @@ body {
 }
 
 .footer__copy {
+  font-size: var(--font-size-5);
   margin-bottom: var(--spacing-2);
 }
 
@@ -549,12 +519,19 @@ body {
   background-color: var(--primary-color);
 }
 
+/* Typical Device Breakpoints */
+/* Landscape Tablets */
 @media only screen and (max-width: 768px) {
+  .home__title {
+    font-size: var(--font-size-3);
+  }
+
   .home__img {
     display: none;
   }
 }
 
+/* Laptops / Desktops */
 @media only screen and (max-width: 992px) {
   .nav__logo {
     display: none;
@@ -563,15 +540,34 @@ body {
     display: flex;
     justify-content: flex-end;
   }
-}
-
-@media only screen and (max-width: 1200px) {
   .skills__name {
     display: none;
+  }
+
+  .skills__data {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Desktops */
+@media only screen and (max-width: 1200px) {
+  :root {
+    /* Typography */
+    --font-size-1: 2rem;
+    --font-size-2: 1.75rem;
+    --font-size-3: 1.5rem;
+    --font-size-4: 1.25rem;
+    --font-size-5: 0.938rem;
+    --font-size-6: 0.75rem;
   }
 }
 
 @media only screen and (min-width: 1920px) {
+  .home__title {
+    width: 1522px;
+  }
+
   .home__content {
     width: 1522px;
   }
@@ -584,3 +580,34 @@ body {
     width: 1141px;
   }
 }
+
+/* Projects Filp Active */
+/* 
+.back__title {
+  font-weight: var(--font--weight-bold);
+  margin-bottom: 8px;
+}
+
+.back__inner {
+  margin-bottom: 12px;
+  font-size: var(--font-size-6);
+}
+
+.back__subTitle {
+  margin-bottom: 8px;
+  font-weight: var(--font--weight-medium);
+}
+
+.projects__back {
+  font-weight: var(--font--weight-light);
+}
+
+.back__btn {
+  color: var(--white-color);
+  font-weight: var(--font--weight-medium);
+  text-align: center;
+  background-color: var(--gray-color-600);
+  font-size: var(--font-size-6);
+  border-radius: 8px;
+  margin-right: 8px;
+} */
