@@ -182,10 +182,10 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vw;
 }
 
-.nav {
+.nav__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -214,7 +214,7 @@ body {
 
 .nav__item {
   position: relative;
-  margin-right: var(--spacing-3);
+  margin-right: 3vw;
 }
 
 .active-link::after,
@@ -229,7 +229,7 @@ body {
 }
 
 /* Home */
-.home {
+.home__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,6 +238,7 @@ body {
 }
 
 .home__title {
+  width: 80%;
   font-size: var(--font-size-2);
   line-height: calc(var(--font-size-2) * 1.4);
   font-weight: var(--font--weight-black);
@@ -250,7 +251,7 @@ body {
 
 .home__content {
   padding: 20px;
-  width: 980px;
+  width: 80%;
   height: 486px;
   box-shadow: var(--box-shadow-2);
   display: flex;
@@ -271,6 +272,7 @@ body {
   display: flex;
   flex-direction: column;
   row-gap: 1.5rem;
+  width: 100%;
 }
 
 .home__icon {
@@ -292,7 +294,7 @@ body {
 
 .home__text {
   color: currentColor;
-  margin-left: var(--spacing-5);
+  margin-left: 20px;
   font-weight: var(--font--weight-medium);
 }
 
@@ -330,20 +332,29 @@ body {
 
 .skills__progess-collection {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  width: 1100px;
+  width: 80%;
   height: auto;
   margin: 0 auto;
 }
 
-.skills__data {
-  border-radius: 0.3rem;
-  margin-top: var(--spacing-1);
+.skills__datas {
+  width: 20%;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.8rem;
+}
+
+.skills__progessbars {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.skills__data {
+  margin-top: var(--spacing-1);
   font-weight: var(--font--weight-bold);
   overflow: hidden;
   cursor: default;
@@ -362,21 +373,27 @@ body {
 .skills__name {
   font-size: var(--font-size-4);
   color: var(--gray-color-600);
-  margin-left: 50px;
+  margin-left: 1vw;
 }
 
 .skills__progessbar {
-  width: 800px;
-  height: 32px;
-  background-color: var(--gray-color-100);
+  width: 100%;
+  height: 36px;
+  margin-top: var(--spacing-1);
+  background-color: var(--gray-color-400);
   border-radius: 5px;
   box-shadow: var(--box-shadow-2);
 }
 
 .skills__percentage {
   background-color: var(--green-color-300);
+  background: linear-gradient(
+    90deg,
+    var(--green-color-100),
+    var(--green-color-300)
+  );
   height: 28px;
-  margin-top: 2px;
+  margin-top: 4px;
   margin-bottom: 2px;
   margin-left: 1%;
   display: flex;
@@ -396,32 +413,33 @@ body {
 /* Projects */
 .projects__container {
   display: grid;
-  grid-auto-rows: 280px;
+  grid-auto-rows: 100%;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
   justify-items: center;
   padding: 0;
   margin: 20px auto 0;
-  width: 980px;
+  width: 60%;
   gap: 10px;
-}
-
-.projects__img {
-  width: 100%;
-  transition: 1s;
-  display: block;
 }
 
 .projects__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 320px;
-  height: 280px;
+  width: 90%;
+  height: 100%;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: var(--box-shadow-1);
-  background-color: var(--white-color);
+  background-color: var(--gray-color-400);
+}
+
+.projects__img {
+  width: 100%;
+  padding: 2.5%;
+  transition: 1s;
+  display: block;
 }
 
 .projects__link:hover .projects__img {
@@ -514,7 +532,7 @@ body {
   font-size: var(--font-size-1);
 }
 
-/* Ffloating Button */
+/* Floating Button */
 .floating__btn {
   position: fixed;
   bottom: 20px;
@@ -529,4 +547,40 @@ body {
 
 .floating__btn:hover {
   background-color: var(--primary-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .home__img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .nav__logo {
+    display: none;
+  }
+  .nav__container {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .skills__name {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .home__content {
+    width: 1522px;
+  }
+
+  .skills__progess-collection {
+    width: 1497px;
+  }
+
+  .projects__container {
+    width: 1141px;
+  }
 }

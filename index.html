@@ -15,7 +15,7 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav container">
+      <nav class="nav__container container">
         <!-- Image Logo -->
         <div class="nav__logo">
           <img class="nav__img" src="./image/logo.png" alt="조범준 로고" />
@@ -46,7 +46,7 @@
     </header>
     <main>
       <!-- Home -->
-      <section class="home container" id="home">
+      <section class="home__container container" id="home">
         <!-- Home Title -->
         <h2 class="home__title">
           안녕하세요! <br />
@@ -109,7 +109,7 @@
       <section class="section bg-gery-1" id="about">
         <h2 class="section__title">About</h2>
 
-        <div class="about_conainer container">
+        <div class="about__conainer container">
           <h3 class="about__subtitle">저는 이렇게 답합니다.</h3>
           <div class="about__text">
             <p>Lorem ipsum dolor sit amet c</p>
@@ -127,81 +127,80 @@
           <!-- Skill Data -->
           <h3 class="skills__subtitle">Profesional Skills</h3>
           <div class="skills__progess-collection">
-            <article class="skills__data">
-              <div class="skills__names">
-                <!-- icon -->
-                <i class="fa-brands fa-html5 skills__icon"></i>
-                <!-- skill name -->
-                <span class="skills__name">HTML5</span>
-              </div>
-              <!-- progress bar -->
-              <div class="skills__progessbar">
+            <div class="skills__datas">
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-html5 skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">HTML5</span>
+                </div>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-css3-alt skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">CSS3</span>
+                </div>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-js skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">JavaScript</span>
+                </div>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-github skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">GitHub</span>
+                </div>
+              </article>
+              <article class="skills__data">
+                <div class="skills__names">
+                  <!-- icon -->
+                  <i class="fa-brands fa-figma skills__icon"></i>
+                  <!-- skill name -->
+                  <span class="skills__name">Figma</span>
+                </div>
+              </article>
+            </div>
+            <div class="skills__progessbars">
+              <article class="skills__progessbar">
                 <div class="skills__percentage">
                   <!-- percentage -->
                   <span class="skills__percentage-text">80%</span>
                 </div>
-              </div>
-            </article>
-            <article class="skills__data">
-              <div class="skills__names">
-                <!-- icon -->
-                <i class="fa-brands fa-css3-alt skills__icon"></i>
-                <!-- skill name -->
-                <span class="skills__name">CSS3</span>
-              </div>
-              <!-- progress bar -->
-              <div class="skills__progessbar">
+              </article>
+              <article class="skills__progessbar">
                 <div class="skills__percentage">
                   <!-- percentage -->
                   <span class="skills__percentage-text">80%</span>
                 </div>
-              </div>
-            </article>
-            <article class="skills__data">
-              <div class="skills__names">
-                <!-- icon -->
-                <i class="fa-brands fa-js skills__icon"></i>
-                <!-- skill name -->
-                <span class="skills__name">JavaScript</span>
-              </div>
-              <!-- progress bar -->
-              <div class="skills__progessbar">
+              </article>
+              <article class="skills__progessbar">
                 <div class="skills__percentage">
                   <!-- percentage -->
                   <span class="skills__percentage-text">70%</span>
                 </div>
-              </div>
-            </article>
-            <article class="skills__data">
-              <div class="skills__names">
-                <!-- icon -->
-                <i class="fa-brands fa-github skills__icon"></i>
-                <!-- skill name -->
-                <span class="skills__name">GitHub</span>
-              </div>
-              <!-- progress bar -->
-              <div class="skills__progessbar">
+              </article>
+              <article class="skills__progessbar">
                 <div class="skills__percentage">
                   <!-- percentage -->
                   <span class="skills__percentage-text">60%</span>
                 </div>
-              </div>
-            </article>
-            <article class="skills__data">
-              <div class="skills__names">
-                <!-- icon -->
-                <i class="fa-brands fa-figma skills__icon"></i>
-                <!-- skill name -->
-                <span class="skills__name">Figma</span>
-              </div>
-              <!-- progress bar -->
-              <div class="skills__progessbar">
+              </article>
+              <article class="skills__progessbar">
                 <div class="skills__percentage">
                   <!-- percentage -->
                   <span class="skills__percentage-text">40%</span>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </div>
       </section>
@@ -342,9 +341,6 @@
       <p class="footer__copy">
         Copyright &copy: 2024 Web Front-end developer portfolio-- by BeomJun Jo
       </p>
-      <a href="#">
-        <i class="fa-solid fa-circle-up footer__icon"></i>
-      </a>
     </footer>
   </body>
 </html>
