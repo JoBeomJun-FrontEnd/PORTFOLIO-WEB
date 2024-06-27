@@ -2,10 +2,25 @@
 
 document.addEventListener('DOMContentLoaded', function () {
   // 프로젝트 클릭시 세부 정보 노출위한 코드
-  const $projectsLink = document.getElementById('projects__link');
-  $projectsLink.addEventListener('click', () => {
-    // 클릭시 클래스에 flip추가 / 삭제
-    $projectsLink.classList.toggle('flip');
+  const projectsLinks = document.querySelectorAll('.projects__link');
+  projectsLinks.forEach((link) => {
+    // 프로젝트 클릭시
+    link.addEventListener('click', () => {
+      // 클릭된 프로젝트 외의 프로젝트에서 flip클래스 삭제
+      projectsLinks.forEach((projectLink) => {
+        if (projectLink.classList.contains('flip')) {
+          if (projectLink !== link) {
+            projectLink.classList.remove('flip');
+          }
+        }
+      });
+      // filp이 있다면 추가 없다면 삭제
+      if (link.classList.contains('flip')) {
+        link.classList.remove('flip');
+      } else {
+        link.classList.add('flip');
+      }
+    });
   });
 
   // Skills 섹션의 progessBar가 뷰포트 진입시 애니메이션 시작 위한 코드
