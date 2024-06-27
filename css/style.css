@@ -217,7 +217,6 @@ body {
   margin-right: 3vw;
 }
 
-.active-link::after,
 .nav__link:hover::after {
   background-color: var(--info-color);
   height: 0.18rem;
@@ -225,7 +224,7 @@ body {
   width: 100%;
   position: absolute;
   left: 0;
-  top: 2rem;
+  top: calc(var(--spacing-1) * 1.65);
 }
 
 /* Home */

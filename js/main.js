@@ -1,30 +1,12 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
-  function init() {
-    // 프로젝트 클릭시 세부 정보 노출위한 코드
-    const $projectsLink = document.getElementById('projects__link');
-    $projectsLink.addEventListener('click', () => {
-      // 클릭시 클래스에 flip추가 / 삭제
-      $projectsLink.classList.toggle('flip');
-    });
-
-    // nav 클릭시 active-link 클래스 생성 ( active-link 생성시 밑줄이 생김)
-    const navLinks = document.querySelectorAll('.nav__link');
-    navLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        // 모든 nav__link에서 active-link 클래스 삭제
-        navLinks.forEach((navLink) => {
-          navLink.classList.remove('active-link');
-        });
-
-        // 클릭된 nav__link만 active-link 클래스 추가
-        link.classList.toggle('active-link');
-      });
-    });
-  }
-
-  init();
+  // 프로젝트 클릭시 세부 정보 노출위한 코드
+  const $projectsLink = document.getElementById('projects__link');
+  $projectsLink.addEventListener('click', () => {
+    // 클릭시 클래스에 flip추가 / 삭제
+    $projectsLink.classList.toggle('flip');
+  });
 
   // Skills 섹션의 progessBar가 뷰포트 진입시 애니메이션 시작 위한 코드
 
