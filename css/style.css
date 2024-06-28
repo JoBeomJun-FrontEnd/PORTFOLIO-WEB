@@ -393,8 +393,8 @@ body {
   background-color: var(--green-color-300);
   background: linear-gradient(
     90deg,
-    var(--green-color-100),
-    var(--green-color-300)
+    var(--blue-color-100),
+    var(--blue-color-300)
   );
   height: 28px;
   margin-top: 4px;
