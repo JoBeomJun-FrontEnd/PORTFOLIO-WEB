@@ -1,6 +1,21 @@
 'use strict';
 
 document.addEventListener('DOMContentLoaded', function () {
+  // 삼선 클릭시 Nav바가 오른쪽에서 나오도록
+  const navMenu = document.querySelector('.nav__menu');
+  const navToggle = document.querySelector('.nav__toggle');
+  navToggle.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+  });
+
+  // Nav클릭시 바가 닫히면서 이동되도록
+  const navItems = document.querySelectorAll('.nav__item');
+  navItems.forEach((navItem) => {
+    navItem.addEventListener('click', () => {
+      navMenu.classList.toggle('show');
+    });
+  });
+
   // 프로젝트 클릭시 세부 정보 노출위한 코드
   const projectsLinks = document.querySelectorAll('.projects__link');
   projectsLinks.forEach((link) => {

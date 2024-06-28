@@ -227,6 +227,11 @@ body {
   top: calc(var(--spacing-1) * 1.65);
 }
 
+.nav__toggle {
+  display: none;
+  cursor: pointer;
+}
+
 /* Home */
 .home__container {
   display: flex;
@@ -521,6 +526,49 @@ body {
 /* Typical Device Breakpoints */
 /* Landscape Tablets */
 @media only screen and (max-width: 768px) {
+  :root {
+    --header-height: 3rem;
+  }
+
+  .nav__menu {
+    position: fixed;
+    background-color: var(--gray-color-800);
+    height: 100%;
+    width: 30%;
+    top: var(--header-height);
+    right: -100%;
+    padding: 2rem;
+    transition: 0.3s;
+  }
+
+  .nav__list {
+    display: block;
+  }
+
+  .nav__item {
+    display: block;
+    width: fit-content;
+    margin-left: 0;
+    margin-bottom: var(--spacing-4);
+  }
+
+  .nav__toggle {
+    display: block;
+    padding-right: 1rem;
+    transition: 0.3s;
+    right: 0px;
+    padding: 2rem;
+    transition: 0.3s;
+  }
+
+  .nav__toggle:hover {
+    font-size: var(--font-size-3);
+  }
+
+  .show {
+    right: 0 !important;
+  }
+
   .home__title {
     font-size: var(--font-size-3);
   }
@@ -535,10 +583,12 @@ body {
   .nav__logo {
     display: none;
   }
+
   .nav__container {
     display: flex;
     justify-content: flex-end;
   }
+
   .skills__name {
     display: none;
   }
