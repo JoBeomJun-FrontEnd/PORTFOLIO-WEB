@@ -511,6 +511,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
+  padding: 6px;
   color: var(--white-color);
   background-color: var(--dark-color);
   font-size: var(--font-size-1);
@@ -521,6 +522,15 @@ body {
 
 .floating__btn:hover {
   background-color: var(--primary-color);
+}
+
+.floating__btn a {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+
+.floating__btn-icon {
 }
 
 /* Typical Device Breakpoints */
