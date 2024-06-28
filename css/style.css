@@ -411,7 +411,8 @@ body {
 
 .skills__percentage-text {
   font-size: var(--font-size-5);
-  color: var(--gray-color-700);
+  font-weight: var(--font--weight-bold);
+  color: var(--gray-color-800);
 }
 
 /* Projects */
