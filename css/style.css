@@ -316,7 +316,9 @@ body {
 }
 
 .about__text {
-  font-size: var(--font-size-4);
+  width: 60%;
+  margin: auto;
+  font-size: calc(var(--font-size-5) * 1.1);
   text-align: center;
   color: var(--gray-color);
 }
