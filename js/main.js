@@ -17,23 +17,23 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   // 프로젝트 클릭시 세부 정보 노출위한 코드
-  const projectsLinks = document.querySelectorAll('.projects__link');
-  projectsLinks.forEach((link) => {
+  const projectsItems = document.querySelectorAll('.projects__item');
+  projectsItems.forEach((item) => {
     // 프로젝트 클릭시
-    link.addEventListener('click', () => {
+    item.addEventListener('click', () => {
       // 클릭된 프로젝트 외의 프로젝트에서 flip클래스 삭제
-      projectsLinks.forEach((projectLink) => {
-        if (projectLink.classList.contains('flip')) {
-          if (projectLink !== link) {
-            projectLink.classList.remove('flip');
+      projectsItems.forEach((projectsItem) => {
+        if (projectsItem.classList.contains('flip')) {
+          if (projectsItem !== item) {
+            projectsItem.classList.remove('flip');
           }
         }
       });
       // filp이 있다면 추가 없다면 삭제
-      if (link.classList.contains('flip')) {
-        link.classList.remove('flip');
+      if (item.classList.contains('flip')) {
+        item.classList.remove('flip');
       } else {
-        link.classList.add('flip');
+        item.classList.add('flip');
       }
     });
   });
