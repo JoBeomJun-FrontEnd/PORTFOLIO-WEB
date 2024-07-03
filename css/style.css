@@ -151,7 +151,7 @@ body {
 
 .section__title {
   position: relative;
-  font-size: var(--font-size-3);
+  font-size: var(--font-size-2);
   color: var(--primary-color);
   text-align: center;
   font-weight: var(--font--weight-black);
@@ -282,7 +282,6 @@ body {
 
 .home__icon {
   font-size: var(--font-size-4);
-  transition: cur;
 }
 
 .home__social {
@@ -310,16 +309,17 @@ body {
 }
 
 .about__subtitle {
-  font-size: var(--font-size-4);
+  font-size: var(--font-size-3);
   font-weight: var(--font--weight-bold);
   margin-bottom: var(--spacing-2);
   text-align: center;
 }
 
-.about__text {
+.about__text p {
   width: 60%;
   margin: auto;
-  font-size: calc(var(--font-size-5) * 1.1);
+  font-size: var(--font-size-4);
+  line-height: var(--font-size-3);
   text-align: center;
   color: var(--gray-color);
 }
@@ -328,13 +328,6 @@ body {
 .skills__container {
   column-gap: var(--spacing-4);
   align-items: center;
-}
-
-.skills__subtitle {
-  font-size: var(--font-size-4);
-  font-weight: var(--font--weight-black);
-  margin-bottom: var(--spacing-3);
-  text-align: center;
 }
 
 .skills__progess-collection {
@@ -368,7 +361,7 @@ body {
 }
 
 .skills__icon {
-  color: var(--info-color);
+  color: #0385ff;
   font-size: var(--font-size-1);
 }
 
@@ -394,11 +387,7 @@ body {
 
 .skills__percentage {
   background-color: var(--green-color-300);
-  background: linear-gradient(
-    90deg,
-    var(--blue-color-100),
-    var(--blue-color-300)
-  );
+  background: linear-gradient(90deg, var(--blue-color-100), #0385ff);
   height: 28px;
   margin-top: 4px;
   margin-bottom: 2px;
@@ -413,9 +402,9 @@ body {
 }
 
 .skills__percentage-text {
-  font-size: var(--font-size-5);
+  font-size: calc(var(--font-size-5) * 1.2);
   font-weight: var(--font--weight-bold);
-  color: var(--gray-color-800);
+  color: var(--gray-color-300);
 }
 
 /* Projects */
