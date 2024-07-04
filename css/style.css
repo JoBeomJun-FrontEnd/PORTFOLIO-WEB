@@ -416,6 +416,7 @@ body {
   font-size: calc(var(--font-size-5) * 1.2);
   font-weight: var(--font--weight-bold);
   color: var(--gray-color-300);
+  margin-right: 10px;
 }
 
 /* Projects */
