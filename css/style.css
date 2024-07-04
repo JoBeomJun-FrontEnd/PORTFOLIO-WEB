@@ -369,6 +369,8 @@ body {
 }
 
 .skills__icon {
+  display: flex;
+  justify-content: center;
   color: #0385ff;
   font-size: var(--font-size-1);
   width: var(--font-size-1);
