@@ -124,18 +124,28 @@ document.addEventListener('DOMContentLoaded', function () {
     observer2.observe(container);
   });
 
+  // [ScrollReveal를 활용한 애니메이션 적용]
+
+  // (어떤 동작을 할건지 변수에 정의)
   const scrollReveal = ScrollReveal({
+    // (위에서 아래로)
     origin: 'top',
+    // (50px만큼)
     distance: '50px',
+    // (2초동안 실행)
     duration: 2000,
   });
 
+  // (화면에 들어오면 바로 실행)
   scrollReveal.reveal('.home__title, .section__title');
+  // (화면에 들어오면 0.4초후에 실행)
   scrollReveal.reveal('.home__img, .about__subtitle', { delay: 400 });
+  // (화면내 똑같은 클래스끼리 0.1초후에 실행)
   scrollReveal.reveal(
     '.home__profile, .about__text, .skills__icon, .skills__name, .contact__input, .contact__btn',
     { interval: 100 },
   );
+  // (화면내 똑같은 클래스끼리 0.3초후에 실행)
   scrollReveal.reveal(' .skills__progessbar, .projects__info', {
     interval: 300,
   });
