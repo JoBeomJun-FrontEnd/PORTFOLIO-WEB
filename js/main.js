@@ -32,8 +32,8 @@ document.addEventListener('DOMContentLoaded', function () {
     root: null,
     // (요소가 뷰포트에 조금이라도 들어오면 콜백 실행)
     threshold: 0,
-    // (위에서 25% 아래에서 74% 사이를 체크)
-    rootMargin: '-25% 0px -74% 0px',
+    // (위에서 35% 아래에서 64% 사이를 체크)
+    rootMargin: '-35% 0px -64% 0px',
   };
 
   // (observer1에 걸리면 실행될 함수 정리)
@@ -122,5 +122,21 @@ document.addEventListener('DOMContentLoaded', function () {
   // (변화 감지할 요소를 등록)
   progessCollections.forEach((container) => {
     observer2.observe(container);
+  });
+
+  const scrollReveal = ScrollReveal({
+    origin: 'top',
+    distance: '50px',
+    duration: 2000,
+  });
+
+  scrollReveal.reveal('.home__title, .section__title');
+  scrollReveal.reveal('.home__img, .about__subtitle', { delay: 400 });
+  scrollReveal.reveal(
+    '.home__profile, .about__text, .skills__icon, .skills__name, .contact__input, .contact__btn',
+    { interval: 100 },
+  );
+  scrollReveal.reveal(' .skills__progessbar, .projects__info', {
+    interval: 300,
   });
 });
