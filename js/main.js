@@ -132,14 +132,14 @@ document.addEventListener('DOMContentLoaded', function () {
     origin: 'top',
     // (50px만큼)
     distance: '50px',
-    // (2초동안 실행)
-    duration: 2000,
+    // (1초동안 실행)
+    duration: 1000,
   });
 
   // (화면에 들어오면 바로 실행)
   scrollReveal.reveal('.home__title, .section__title');
   // (화면에 들어오면 0.4초후에 실행)
-  scrollReveal.reveal('.home__img, .about__subtitle', { delay: 400 });
+  scrollReveal.reveal('.home__img, .about__subtitle', { delay: 300 });
   // (화면에 들어온 지정된 클래스들을 interval뒤 숫자 밀리세크마다 실행)
   scrollReveal.reveal('.home__profile', { interval: 100 });
   scrollReveal.reveal('.about__text', { interval: 100 });

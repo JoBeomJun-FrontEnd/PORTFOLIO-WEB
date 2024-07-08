@@ -248,6 +248,7 @@ html {
 
 .home__title {
   width: 80%;
+  height: 168px;
   font-size: var(--font-size-2);
   line-height: calc(var(--font-size-2) * 1.4);
   font-weight: var(--font--weight-black);
