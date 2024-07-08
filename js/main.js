@@ -140,13 +140,40 @@ document.addEventListener('DOMContentLoaded', function () {
   scrollReveal.reveal('.home__title, .section__title');
   // (화면에 들어오면 0.4초후에 실행)
   scrollReveal.reveal('.home__img, .about__subtitle', { delay: 400 });
-  // (화면내 똑같은 클래스끼리 0.1초후에 실행)
-  scrollReveal.reveal(
-    '.home__profile, .about__text, .skills__icon, .skills__name, .contact__input, .contact__btn',
-    { interval: 100 },
-  );
-  // (화면내 똑같은 클래스끼리 0.3초후에 실행)
-  scrollReveal.reveal(' .skills__progessbar, .projects__info', {
-    interval: 300,
+  // (화면에 들어온 지정된 클래스들을 interval뒤 숫자 밀리세크마다 실행)
+  scrollReveal.reveal('.home__profile', { interval: 100 });
+  scrollReveal.reveal('.about__text', { interval: 100 });
+  scrollReveal.reveal('.skills__icon', { interval: 100 });
+  scrollReveal.reveal('.skills__name', { interval: 100 });
+  scrollReveal.reveal('.contact__input', { interval: 100 });
+  scrollReveal.reveal('.contact__btn', { interval: 100 });
+  scrollReveal.reveal(' .skills__progessbar', { interval: 200 });
+  scrollReveal.reveal('.projects__info', { interval: 200 });
+
+  // [Typeits를 활용한 텍스트 타이핑 효과 넣기]
+
+  // (어떤 동작을 할건지 변수에 정의)
+  const typeit = new TypeIt('#typeit', {
+    // (타이핑 속도)
+    speed: 70,
+    // (시작 딜레이)
+    startDelay: 500,
+    // (뷰포트에 보이면 시작할지 그냥 시작할지)
+    waitUntilvisible: true,
   });
+
+  // (문구 작성)
+  typeit
+    .type('안녕하세요!<br/>')
+    .type(
+      '<strong class="home__title-color">주니어 FrontEnd 개발자</strong><br/>',
+    )
+    // (문구 작성후 0.3초 대기)
+    .type('<strong class="home__title-color">JobeomJun</strong>', {
+      delay: 300,
+    })
+    // (글자 9개 지우고 0.3초후 다음 문구 작성)
+    .delete(9, { delay: 300 })
+    .type('<strong class="home__title-color">조범준</strong>입니다!')
+    .go();
 });
