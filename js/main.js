@@ -176,4 +176,37 @@ document.addEventListener('DOMContentLoaded', function () {
     .delete(9, { delay: 300 })
     .type('<strong class="home__title-color">조범준</strong>입니다!')
     .go();
+
+  // [이메일 클라이언트 열기]
+
+  // (콘텍트 폼 아이디를 활용해 가져오기)
+  const contactFormEl = document.getElementById('contactForm');
+
+  //(submit 이벤트 할당)
+  contactFormEl.addEventListener('submit', function (event) {
+    //(새로고침을 막기 위해 작성)
+    event.preventDefault();
+
+    // (폼 하위 인풋 값 가져오기)
+    const name = contactFormEl.name.value;
+    const title = contactFormEl.title.value;
+    const message = contactFormEl.message.value;
+
+    // (이메일 하드코딩)
+    const to = 'oreasv3@gmail.com';
+
+    // (이메일 클라이언트 열기)
+    location.href =
+      // (이메일을 여는 mailto)
+      'mailto:' +
+      // (메일 프로토콜에 혼동을 없애기 위한 encodeURIComponent 사용)
+      encodeURIComponent(to) +
+      // (제목)
+      '?subject=' +
+      // (안전한 이스케이프 문자로 치환)
+      encodeURIComponent(`[${name}님 문의] ${title}`) +
+      // (메세지)
+      '&body=' +
+      encodeURIComponent(message);
+  });
 });
