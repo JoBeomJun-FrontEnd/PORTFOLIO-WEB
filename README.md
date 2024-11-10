@@ -18,3 +18,4 @@
 - HTML
 - CSS
 - JavaScript
+- GitHubPages
